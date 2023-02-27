@@ -11,6 +11,6 @@ class ModalPageAsset extends AssetBundle {
         'js/script.js',
     ];
     public $depends = [
-        'yii\web\YiiAsset',
+        'yii\bootstrap5\BootstrapAsset',
     ];
 }
