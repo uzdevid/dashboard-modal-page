@@ -12,5 +12,6 @@ class ModalPageAsset extends AssetBundle {
     ];
     public $depends = [
         'yii\bootstrap5\BootstrapAsset',
+        'dashboard\toaster\ToasterAsset'
     ];
 }

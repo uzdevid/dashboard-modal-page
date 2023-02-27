@@ -8,9 +8,9 @@ function openModalPage(url) {
             }
 
             if (data.toaster.options) {
-                toastr.options = data.toaster.options;
+                toaster.options = data.toaster.options;
             } else {
-                toastr.options = {
+                toaster.options = {
                     closeButton: true,
                     newestOnTop: true,
                     progressBar: true,
@@ -21,7 +21,7 @@ function openModalPage(url) {
             if (data.toaster.script) {
                 eval(data.toaster.script);
             } else {
-                toastr.error(data.body.message, data.body.title)
+                toaster.error(data.body.message, data.body.title)
             }
 
             return false;
@@ -50,7 +50,7 @@ function openModalPage(url) {
     })
         .fail(function (data) {
             console.log(data);
-            toastr.error(data.responseJSON.body.message, data.responseJSON.body.name);
+            toaster.error(data.responseJSON.body.message, data.responseJSON.body.name);
         });
 }
 
