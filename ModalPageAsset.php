@@ -4,7 +4,7 @@ namespace dashboard\modalpage;
 
 use yii\web\AssetBundle;
 
-class AppAsset extends AssetBundle {
+class ModalPageAsset extends AssetBundle {
     public $sourcePath = '@vendor/dashboard/modal-page/assets';
     public $css = [];
     public $js = [
